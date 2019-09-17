@@ -16,5 +16,11 @@ setGradient();
 	 css.textContent = body.style.background +" ;";
 }
 
+function randomColorGenerator(){
+	color1.value = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+	color2.value = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+	setGradient();
+}
+
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
